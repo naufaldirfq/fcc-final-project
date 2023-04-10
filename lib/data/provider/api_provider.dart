@@ -19,7 +19,6 @@ class ApiProvider {
   Future<List<String>> fetchGenres() async {
     try {
       final response = await mkrNetwork.get('genre/movie/list', queryParameters: {'api_key': apiKey});
-      // final response = await mkrNetwork.get('https://api.themoviedb.org/3/genre/movie/list?api_key=$apiKey');
       final List<dynamic> data = response.data['genres'];
       final List<String> genres = data.map((genre) => genre['name'].toString()).toList();
       return genres;

@@ -1,5 +1,5 @@
 class Cast {
-  bool adult;
+  bool? adult;
   int? gender;
   int? id;
   String? knownForDepartment;
@@ -13,18 +13,18 @@ class Cast {
   int? order;
 
   Cast({
-    required this.adult,
-    required this.gender,
-    required this.id,
-    required this.knownForDepartment,
-    required this.name,
-    required this.originalName,
-    required this.popularity,
-    required this.profilePath,
-    required this.castId,
-    required this.character,
-    required this.creditId,
-    required this.order,
+    this.adult,
+    this.gender,
+    this.id,
+    this.knownForDepartment,
+    this.name,
+    this.originalName,
+    this.popularity,
+    this.profilePath,
+    this.castId,
+    this.character,
+    this.creditId,
+    this.order,
   });
 
   factory Cast.fromJson(Map<String, dynamic> json) {

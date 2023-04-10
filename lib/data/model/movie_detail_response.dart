@@ -1,5 +1,5 @@
 class MovieDetail {
-  final bool adult;
+  final bool? adult;
   final String? backdropPath;
   final int? budget;
   final String? homepage;
@@ -21,26 +21,26 @@ class MovieDetail {
   final int? voteCount;
 
   MovieDetail({
-    required this.adult,
-    required this.backdropPath,
-    required this.budget,
-    required this.homepage,
-    required this.id,
-    required this.imdbId,
-    required this.originalLanguage,
-    required this.originalTitle,
-    required this.overview,
-    required this.popularity,
-    required this.posterPath,
-    required this.releaseDate,
-    required this.revenue,
-    required this.runtime,
-    required this.status,
-    required this.tagline,
-    required this.title,
-    required this.video,
-    required this.voteAverage,
-    required this.voteCount,
+    this.adult,
+    this.backdropPath,
+    this.budget,
+    this.homepage,
+    this.id,
+    this.imdbId,
+    this.originalLanguage,
+    this.originalTitle,
+    this.overview,
+    this.popularity,
+    this.posterPath,
+    this.releaseDate,
+    this.revenue,
+    this.runtime,
+    this.status,
+    this.tagline,
+    this.title,
+    this.video,
+    this.voteAverage,
+    this.voteCount,
   });
 
   factory MovieDetail.fromJson(Map<String, dynamic> json) {
